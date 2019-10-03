@@ -35,3 +35,22 @@ ggplot() +
   theme_void() 
   #theme(legend.position="bottom")
   # theme(legend.key.width=unit(2, "cm"))
+
+
+mapa_ursal <- mapa + scale_y_reverse() + scale_x_reverse()
+
+# creating sticker
+
+font_add_google("Roboto Mono", "roboto")
+
+sticker(mapa_ursal, 
+        package="modleR", 
+        p_size=20, 
+        s_x=1, s_y=.75, 
+        s_width=1.4, s_height=1.1, 
+        p_family="roboto",
+        p_color=cores[4],
+        h_fill='white',
+        h_color=cores[4],
+        filename="figs/modleR.png")
+
