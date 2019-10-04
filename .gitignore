@@ -14,3 +14,8 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+# dirs w/ big files
+data/shapefile/
+data/raster/
+data/model/
