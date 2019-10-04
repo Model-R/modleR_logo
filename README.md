@@ -6,7 +6,7 @@ The adequability map in the logo was buit using `modleR` and corresponds to the 
 
 In the logo we used Miriam Libre font, developed by [Michael Sahar](github.com/MichalSahar/Miriam-Libre) and available at google fonts. 
 
-![logo](figs/modleRMiriam Libre.png)
+![](figs/modleRMiriam_Libre.png)
 
 Guangchuang Yu (2019). hexSticker: Create Hexagon Sticker in R. R package
   version 0.4.6. https://CRAN.R-project.org/package=hexSticker
