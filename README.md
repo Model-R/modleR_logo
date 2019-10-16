@@ -5,13 +5,13 @@ This is the repo for our package logo built using the `hexSticker`
 package (Guangchuang 2019).
 
 The adequability map in the logo was buit using **modleR** and
-corresponds to the climatic adeaquability map of the Andean bear
+corresponds to the climatic adequability map of the Andean bear
 *Tremarctos ornatus*. We used occurrence data from
 [GBIF](https://www.gbif.org) and climatic variables for South America
 from [WorldClim](https://www.worldclim.org) in the form of a PCA to
 generate the map.
 
-The upside South America map is a hommage to Joaquin Torres García’s
+The upside down South America map is a hommage to Joaquín Torres García’s
 [“América Invertida”](https://en.wikipedia.org/wiki/América_Invertida)
 (1943).
 
