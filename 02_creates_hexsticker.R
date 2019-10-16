@@ -2,18 +2,17 @@ library(hexSticker)
 library(showtext)
 library(raster)
 library(ggplot2)
-library(viridis)  # better colors for everyone
-library(ggthemes) # theme_map()
+library(dplyr)
+#library(viridis)  # better colors for everyone
+#library(ggthemes) # theme_map()
 
-cores <- c(rgb(0,0,0, maxColorValue = 255), 
-           rgb(28,28,25, maxColorValue = 255),
-           rgb(252,234,151, maxColorValue = 255),
-           rgb(166,2,2, maxColorValue = 255),
-           rgb(255,192,3, maxColorValue = 255)
-           
+cores <- c(
+  rgb(0,0,0, maxColorValue = 255), 
+  rgb(28,28,25, maxColorValue = 255),
+  rgb(252,234,151, maxColorValue = 255),
+  rgb(166,2,2, maxColorValue = 255),
+  rgb(255,192,3, maxColorValue = 255)
 )
-
-# '#ffbaba', ,
 
 red_pal <- c('#ff7b7b', '#ff5252', '#ff0000', '#a70000', "#A60202")
 
@@ -47,11 +46,9 @@ mapa_ursal
 
 # creating sticker
 #font_add_google("Ubuntu Condensed", "fonte")
-best_font <- 
-
 font_test <- c("Miriam Libre", "Cabin Condensed", "Ubuntu Condensed")
 
-i=1
+i  <- 1 # best font Miriam Libre
 #for(i in 1:length(font_test)){
   font_add_google(font_test[i], "fonte")
   sticker(mapa_ursal, 
@@ -64,5 +61,6 @@ i=1
           p_color=cores[4],
           h_fill='white' ,#cores[2], # 
           h_color=cores[4],
-          filename=paste0("figs/modleR_", font_test[i], ".png"))
+          filename=paste0("figs/modleR_", font_test[i], ".png"), 
+          white_around_sticker = TRUE)
 #}

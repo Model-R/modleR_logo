@@ -1,3 +1,9 @@
+######################################################
+#### Generates tif file to make hexSticker figure ####
+######################################################
+# By Sara Mortara & Andrea Sanchez-Tapia
+
+# loading packages
 library(dplyr)
 library(modleR)
 library(raster)
